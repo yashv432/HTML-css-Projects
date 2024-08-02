@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Python Documentation</title>
+  <body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <a class="nav-link" href="#Introduction_to_Python">Introduction to Python</a>
+        <a class="nav-link" href="#Python_Basics">Python Basics</a>
+        <a class="nav-link" href="#Python_Variables">Python Variables</a>
+        <a class="nav-link" href="#Python_Strings">Python Strings</a>
+        <a class="nav-link" href="#Python_Numbers">Python Numbers</a>
+        <a class="nav-link" href="#Reference">Reference</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section">
+            <header id="Introduction_to_Python">Introduction to Python</header>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <p>It is used for:</p>
+            <ul>
+                <li>web development (server-side),</li>
+                <li>software development,</li>
+                <li>mathematics,</li>
+                <li>system scripting.</li>
+            </ul>
+        </section>
+        <section class="main-section">
+            <header id="Python_Basics">Python Basics</header>
+            <p>The simplest functions within python include creating variables, and printing statements. Let's begin with a simple example for practice. We will start by creating a variable and printing it to see the outcome.</p>
+            <code>
+                greeting = "Hello World"
+                <br></br>print(greeting)
+                <br></br># Output: Hello World
+            </code>
+            <p>As you can see, the variable greeting was created and assigned the value "Hello World". The print statement was used to display the value of the variable. We will go further in-depth into variables in the next section.</p>
+        </section>
+        <section class="main-section">
+            <header id="Python_Variables">Python Variables</header>
+            <p>Variables are some of the most important functions you will learn to implement, since nearly everything you create using python will include them. You can assign strings and numbers to variables, then these variables can be used to complete various functions, without making your code look ugly. Variables can be assigned simply be providing a word or letter (no numbers), followed by an "=", then the string or number (or any other type) you would like to assign to that variable. Here are a few examples:</p>
+            <code>
+                x = 5
+                <br></br>y = "John"
+                <br></br>print(x)
+                <br></br>print(y)
+                <br></br># Output: 5
+                <br></br># Output: John
+            </code>
+            <p>As you can see, the variable x was assigned the value 5, and the variable y was assigned the value "John". The print statement was used to display the values of the variables. You can also change the value of variables without consequence (unless the variable has been used in a function beforehand), since python executes cells from top to bottom in order. For example:</p>
+            <code>
+                x = 5
+                <br></br>print(x)
+                <br></br># Output: 5
+                <br></br>x = "woah"
+                <br></br>print(x)
+                <br></br># Output: woah
+            </code>
+        </section>
+        <section class="main-section">
+            <header id="Python_Strings">Python Strings</header>
+            <p>Strings in python are surrounded by either "" or '', and a string literal can be displayed using the print function.</p>
+            <code>
+                print("Hello")
+                <br></br># Output: Hello
+            </code>
+            <p>Strings can be assigned to variables, and you can concatenate strings by using the "+" operator. For example:</p>
+            <code>
+                a = "Hello"
+                <br></br>b = "World"
+                <br></br>c = a + b
+                <br></br>print(c)
+                <br></br># Output: HelloWorld
+            </code>
+        </section>
+        <section class="main-section">
+            <header id="Python_Numbers">Python Numbers</header>
+            <p>There are three number types in python:</p>
+            <ul>
+                <li>int, or integer, is a whole number, without decimals.</li>
+                <li>float, or 'floating point number' is a number containing one or more decimals.</li>
+                <li>complex, written with a 'j' as the imaginary part.</li>
+            </ul>
+            <p>Here are some examples:</p>
+            <code>
+                x = 1 # int
+                <br></br>y = 2.8 # float
+                <br></br>z = 1j # complex
+            </code>
+        </section>
+        <section class="main-section">
+            <header id="Reference">Reference</header>
+            <ul>
+                <li class="end">All the documentation on this page is derived from <a href="https://www.w3schools.com/python/python_intro.asp">w3schools</a>.</li>
+            </ul>
+        </section>
+    </main>
+  </body>  
+</html>

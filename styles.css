@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+}
+
+*:not(code) {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid black;
+    width: 290px;
+    padding-bottom: 100%;
+    padding-top: 10px;
+    height: 100%;
+}
+
+nav header {
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 2px solid rgb(48, 47, 47);
+    padding-bottom: 10px;
+    padding-right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(48, 47, 47);
+    padding-top: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(49, 48, 48);
+}
+
+.a-nav-link:hover {
+    cursor: pointer;
+}
+
+main {
+    margin-left: 310px;
+    margin-right: 20px;
+}
+
+section header {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+section *:not(header, code, a) {
+    padding-left: 18px;
+}
+
+p {
+    color: rgb(59, 59, 59);
+}
+
+li {
+    color: rgb(59, 59, 59);
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
+}
+
+code {
+    font-family: monospace;
+    display: block;
+    padding: 20px 0px 20px 30px;
+    border-radius: 7px;
+    background-color: rgb(233, 231, 231);
+    margin-left: 30px
+}
+
+.end {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    nav {
+        width: 100%;
+        position: static;
+        border-right: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        height: auto;
+    }
+
+    nav header {
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+
+    .nav-link {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    section header {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    section *:not(header, code, a) {
+        padding-left: 10px;
+    }
+
+    code {
+        padding: 10px 0px 10px 20px;
+        margin-left: 20px;
+    }
+}
