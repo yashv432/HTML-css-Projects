@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <link rel="stylesheet" href="styles.css" />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <body>
+        <h1 id="title">The only survey that matters</h1>
+        <p id="description">Nothing else matters (Metallica moment)</p>
+        <form id="survey-form">
+          <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required/></label>
+          <label id="email-label">Email<input required id="email" type="email" placeholder="Enter your Email"/></label>
+          <label id="number-label">Age (Optional)<input id="number" type="number" min="0" max="120" placeholder="Age"/></label>
+          <select id="dropdown">
+            <option selected disabled>Select a hobby</option>
+            <option>Games</option>
+            <option>Sports</option>
+          </select>
+          <p><b>Which is better?</b></p>
+          <label><input type="radio" name="option" value="option" checked>Greatsword</input></label><br></br>
+          <label><input type="radio" value="option" name="option">Claymore</input></label>
+          <p><b>Select which you like?</b></p>
+          <label><input value="yeowch" type="checkbox">Greatswords</input></label><br></br>
+          <label><input value="yeowch" type="checkbox">Katanas</input></label><br></br>
+          <label><input value="yeowch" type="checkbox">Curved Swords</input></label><br></br>
+          <label><input value="yeowch" type="checkbox">Great-Hammers</input></label>
+          <p><b>State your business?</b></p>
+          <textarea id="improvements" placeholder="Additional comments..." rows="5" columns="100" form="survey-form"></textarea>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </body>
+    </html>
